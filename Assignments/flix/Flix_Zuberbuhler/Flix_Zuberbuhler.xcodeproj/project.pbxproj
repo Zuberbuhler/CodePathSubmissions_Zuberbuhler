@@ -1,0 +1,640 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7C784FA627C8E5090091D2D5 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C784FA527C8E5090091D2D5 /* MoviesViewController.swift */; };
+		7CBAB5D527C8D5B600ABA2C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB5D427C8D5B600ABA2C8 /* AppDelegate.swift */; };
+		7CBAB5D727C8D5B600ABA2C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB5D627C8D5B600ABA2C8 /* SceneDelegate.swift */; };
+		7CBAB5DC27C8D5B600ABA2C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB5DA27C8D5B600ABA2C8 /* Main.storyboard */; };
+		7CBAB5DE27C8D5C000ABA2C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB5DD27C8D5C000ABA2C8 /* Assets.xcassets */; };
+		7CBAB5E127C8D5C000ABA2C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CBAB5DF27C8D5C000ABA2C8 /* LaunchScreen.storyboard */; };
+		7CBAB5EC27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB5EB27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.swift */; };
+		7CBAB5F627C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB5F527C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.swift */; };
+		7CBAB5F827C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CBAB5F727C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITestsLaunchTests.swift */; };
+		7CF429B027C9837600A33CFD /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF429AF27C9837600A33CFD /* MovieCell.swift */; };
+		7CF429B327C9920800A33CFD /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7CF429B227C9920800A33CFD /* AlamofireImage */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CBAB5E827C8D5C100ABA2C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CBAB5C927C8D5B600ABA2C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CBAB5D027C8D5B600ABA2C8;
+			remoteInfo = Flix_Zuberbuhler;
+		};
+		7CBAB5F227C8D5C100ABA2C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CBAB5C927C8D5B600ABA2C8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CBAB5D027C8D5B600ABA2C8;
+			remoteInfo = Flix_Zuberbuhler;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7C784FA527C8E5090091D2D5 /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		7CBAB5D127C8D5B600ABA2C8 /* Flix_Zuberbuhler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flix_Zuberbuhler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBAB5D427C8D5B600ABA2C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CBAB5D627C8D5B600ABA2C8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7CBAB5DB27C8D5B600ABA2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CBAB5DD27C8D5C000ABA2C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CBAB5E027C8D5C000ABA2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CBAB5E227C8D5C000ABA2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CBAB5E727C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flix_ZuberbuhlerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBAB5EB27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_ZuberbuhlerTests.swift; sourceTree = "<group>"; };
+		7CBAB5F127C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Flix_ZuberbuhlerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CBAB5F527C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_ZuberbuhlerUITests.swift; sourceTree = "<group>"; };
+		7CBAB5F727C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flix_ZuberbuhlerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7CF429AF27C9837600A33CFD /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CBAB5CE27C8D5B600ABA2C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CF429B327C9920800A33CFD /* AlamofireImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5E427C8D5C100ABA2C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5EE27C8D5C100ABA2C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CBAB5C827C8D5B600ABA2C8 = {
+			isa = PBXGroup;
+			children = (
+				7CBAB5D327C8D5B600ABA2C8 /* Flix_Zuberbuhler */,
+				7CBAB5EA27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests */,
+				7CBAB5F427C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests */,
+				7CBAB5D227C8D5B600ABA2C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CBAB5D227C8D5B600ABA2C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAB5D127C8D5B600ABA2C8 /* Flix_Zuberbuhler.app */,
+				7CBAB5E727C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.xctest */,
+				7CBAB5F127C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CBAB5D327C8D5B600ABA2C8 /* Flix_Zuberbuhler */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAB5D427C8D5B600ABA2C8 /* AppDelegate.swift */,
+				7CBAB5D627C8D5B600ABA2C8 /* SceneDelegate.swift */,
+				7CBAB5DA27C8D5B600ABA2C8 /* Main.storyboard */,
+				7CF429AF27C9837600A33CFD /* MovieCell.swift */,
+				7C784FA527C8E5090091D2D5 /* MoviesViewController.swift */,
+				7CBAB5DD27C8D5C000ABA2C8 /* Assets.xcassets */,
+				7CBAB5DF27C8D5C000ABA2C8 /* LaunchScreen.storyboard */,
+				7CBAB5E227C8D5C000ABA2C8 /* Info.plist */,
+			);
+			path = Flix_Zuberbuhler;
+			sourceTree = "<group>";
+		};
+		7CBAB5EA27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAB5EB27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.swift */,
+			);
+			path = Flix_ZuberbuhlerTests;
+			sourceTree = "<group>";
+		};
+		7CBAB5F427C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7CBAB5F527C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.swift */,
+				7CBAB5F727C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITestsLaunchTests.swift */,
+			);
+			path = Flix_ZuberbuhlerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CBAB5D027C8D5B600ABA2C8 /* Flix_Zuberbuhler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CBAB5FB27C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_Zuberbuhler" */;
+			buildPhases = (
+				7CBAB5CD27C8D5B600ABA2C8 /* Sources */,
+				7CBAB5CE27C8D5B600ABA2C8 /* Frameworks */,
+				7CBAB5CF27C8D5B600ABA2C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Flix_Zuberbuhler;
+			packageProductDependencies = (
+				7CF429B227C9920800A33CFD /* AlamofireImage */,
+			);
+			productName = Flix_Zuberbuhler;
+			productReference = 7CBAB5D127C8D5B600ABA2C8 /* Flix_Zuberbuhler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CBAB5E627C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CBAB5FE27C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_ZuberbuhlerTests" */;
+			buildPhases = (
+				7CBAB5E327C8D5C100ABA2C8 /* Sources */,
+				7CBAB5E427C8D5C100ABA2C8 /* Frameworks */,
+				7CBAB5E527C8D5C100ABA2C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CBAB5E927C8D5C100ABA2C8 /* PBXTargetDependency */,
+			);
+			name = Flix_ZuberbuhlerTests;
+			productName = Flix_ZuberbuhlerTests;
+			productReference = 7CBAB5E727C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7CBAB5F027C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CBAB60127C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_ZuberbuhlerUITests" */;
+			buildPhases = (
+				7CBAB5ED27C8D5C100ABA2C8 /* Sources */,
+				7CBAB5EE27C8D5C100ABA2C8 /* Frameworks */,
+				7CBAB5EF27C8D5C100ABA2C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CBAB5F327C8D5C100ABA2C8 /* PBXTargetDependency */,
+			);
+			name = Flix_ZuberbuhlerUITests;
+			productName = Flix_ZuberbuhlerUITests;
+			productReference = 7CBAB5F127C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CBAB5C927C8D5B600ABA2C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					7CBAB5D027C8D5B600ABA2C8 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					7CBAB5E627C8D5C100ABA2C8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7CBAB5D027C8D5B600ABA2C8;
+					};
+					7CBAB5F027C8D5C100ABA2C8 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 7CBAB5D027C8D5B600ABA2C8;
+					};
+				};
+			};
+			buildConfigurationList = 7CBAB5CC27C8D5B600ABA2C8 /* Build configuration list for PBXProject "Flix_Zuberbuhler" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CBAB5C827C8D5B600ABA2C8;
+			packageReferences = (
+				7CF429B127C9920800A33CFD /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
+			productRefGroup = 7CBAB5D227C8D5B600ABA2C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CBAB5D027C8D5B600ABA2C8 /* Flix_Zuberbuhler */,
+				7CBAB5E627C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests */,
+				7CBAB5F027C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CBAB5CF27C8D5B600ABA2C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBAB5E127C8D5C000ABA2C8 /* LaunchScreen.storyboard in Resources */,
+				7CBAB5DE27C8D5C000ABA2C8 /* Assets.xcassets in Resources */,
+				7CBAB5DC27C8D5B600ABA2C8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5E527C8D5C100ABA2C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5EF27C8D5C100ABA2C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CBAB5CD27C8D5B600ABA2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBAB5D527C8D5B600ABA2C8 /* AppDelegate.swift in Sources */,
+				7CBAB5D727C8D5B600ABA2C8 /* SceneDelegate.swift in Sources */,
+				7CF429B027C9837600A33CFD /* MovieCell.swift in Sources */,
+				7C784FA627C8E5090091D2D5 /* MoviesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5E327C8D5C100ABA2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBAB5EC27C8D5C100ABA2C8 /* Flix_ZuberbuhlerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CBAB5ED27C8D5C100ABA2C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CBAB5F827C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITestsLaunchTests.swift in Sources */,
+				7CBAB5F627C8D5C100ABA2C8 /* Flix_ZuberbuhlerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CBAB5E927C8D5C100ABA2C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CBAB5D027C8D5B600ABA2C8 /* Flix_Zuberbuhler */;
+			targetProxy = 7CBAB5E827C8D5C100ABA2C8 /* PBXContainerItemProxy */;
+		};
+		7CBAB5F327C8D5C100ABA2C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CBAB5D027C8D5B600ABA2C8 /* Flix_Zuberbuhler */;
+			targetProxy = 7CBAB5F227C8D5C100ABA2C8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CBAB5DA27C8D5B600ABA2C8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CBAB5DB27C8D5B600ABA2C8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CBAB5DF27C8D5C000ABA2C8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CBAB5E027C8D5C000ABA2C8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CBAB5F927C8D5C100ABA2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7CBAB5FA27C8D5C100ABA2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CBAB5FC27C8D5C100ABA2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flix_Zuberbuhler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-Zuberbuhler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CBAB5FD27C8D5C100ABA2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Flix_Zuberbuhler/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-Zuberbuhler";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7CBAB5FF27C8D5C100ABA2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-ZuberbuhlerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flix_Zuberbuhler.app/Flix_Zuberbuhler";
+			};
+			name = Debug;
+		};
+		7CBAB60027C8D5C100ABA2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-ZuberbuhlerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Flix_Zuberbuhler.app/Flix_Zuberbuhler";
+			};
+			name = Release;
+		};
+		7CBAB60227C8D5C100ABA2C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-ZuberbuhlerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flix_Zuberbuhler;
+			};
+			name = Debug;
+		};
+		7CBAB60327C8D5C100ABA2C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7L843M34CY;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.zuberbuhler.dev.Flix-ZuberbuhlerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Flix_Zuberbuhler;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CBAB5CC27C8D5B600ABA2C8 /* Build configuration list for PBXProject "Flix_Zuberbuhler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBAB5F927C8D5C100ABA2C8 /* Debug */,
+				7CBAB5FA27C8D5C100ABA2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CBAB5FB27C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_Zuberbuhler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBAB5FC27C8D5C100ABA2C8 /* Debug */,
+				7CBAB5FD27C8D5C100ABA2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CBAB5FE27C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_ZuberbuhlerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBAB5FF27C8D5C100ABA2C8 /* Debug */,
+				7CBAB60027C8D5C100ABA2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CBAB60127C8D5C100ABA2C8 /* Build configuration list for PBXNativeTarget "Flix_ZuberbuhlerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CBAB60227C8D5C100ABA2C8 /* Debug */,
+				7CBAB60327C8D5C100ABA2C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7CF429B127C9920800A33CFD /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7CF429B227C9920800A33CFD /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7CF429B127C9920800A33CFD /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7CBAB5C927C8D5B600ABA2C8 /* Project object */;
+}
