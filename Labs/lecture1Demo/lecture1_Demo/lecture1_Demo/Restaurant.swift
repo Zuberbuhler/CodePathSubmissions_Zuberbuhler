@@ -8,6 +8,7 @@
 import Foundation
 
 struct Restaurant {
+    let id: String
     let name: String
     let type: String
     let rating: Int

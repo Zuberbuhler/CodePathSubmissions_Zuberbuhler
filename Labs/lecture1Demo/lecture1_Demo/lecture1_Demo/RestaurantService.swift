@@ -11,9 +11,13 @@ class RestaurantService {
     
     static let shared = RestaurantService()
     
+    let apikey = "v7t-QuKRd7Cu-p0YXnAc8S6xcnLIEbKOUA-iRZy78DG_8B49cnagdNEo-z_cYBHb5GKCGh1_I-VIlIkazj80hoF6GpWl0rh6i2H4zuuzkva0t2QiV-zMvAONvpbfYXYx"
+    
+    let session = URLSession(configuration: .default, delegate: nil, delegateQueue: .main)
+    
+    
     func fetchRestaurants(completion: @escaping( ([Restaurant]) -> Void) )
     {
-        let apikey = "v7t-QuKRd7Cu-p0YXnAc8S6xcnLIEbKOUA-iRZy78DG_8B49cnagdNEo-z_cYBHb5GKCGh1_I-VIlIkazj80hoF6GpWl0rh6i2H4zuuzkva0t2QiV-zMvAONvpbfYXYx"
         
         let lat = 37.773972
         let long = -122.431297
@@ -22,8 +26,6 @@ class RestaurantService {
         var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
         
         request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
-        
-        let session = URLSession(configuration: .default, delegate: nil, delegateQueue: .main)
         
         let task = session.dataTask(with: request) { data, response, error in
             //fill out
@@ -43,13 +45,34 @@ class RestaurantService {
             var restaurants = [Restaurant]()
             
             for rawData in restaurantsRawData {
-                let restaurant = Restaurant(name: rawData["name"] as! String, type: (rawData["categories"] as! [[String: String ]])[0]["title"]!, rating: (rawData["rating"] as! NSNumber).intValue, phoneNumber: rawData["display_phone"] as! String, imageURL: rawData["image_url"] as! String)
+                let restaurant = Restaurant(id: rawData["id"] as! String, name: rawData["name"] as! String, type: (rawData["categories"] as! [[String: String ]])[0]["title"]!, rating: (rawData["rating"] as! NSNumber).intValue, phoneNumber: rawData["display_phone"] as! String, imageURL: rawData["image_url"] as! String)
                 
                 restaurants.append(restaurant);
             }
             completion(restaurants)
         }
         
+        task.resume()
+    }
+    
+    func fetchRestaurantDetail(id: String, completion: @escaping(RestaurantDetail?) -> Void)
+    {
+        let url = URL(string: "https://api.yelp.com/v3/businesses/\(id)")!
+        
+        var request = URLRequest(url: url, cachePolicy: .reloadIgnoringLocalCacheData, timeoutInterval: 10)
+        
+        request.setValue("Bearer \(apikey)", forHTTPHeaderField: "Authorization")
+        
+        let task = session.dataTask(with: request) { data, response, error in
+            
+                if let error = error {
+                    print(error.localizedDescription)
+                } else if let data = data {
+                    let decoder = JSONDecoder()
+                    let restaurantDetail = try? decoder.decode(RestaurantDetail.self, from: data)
+                    completion(restaurantDetail)
+                }
+        }
         task.resume()
     }
 }

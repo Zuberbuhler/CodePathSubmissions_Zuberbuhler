@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		7C11AD3E27C855D600F5D218 /* RestaurantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11AD3D27C855D600F5D218 /* RestaurantService.swift */; };
 		7C11AD4027C8567500F5D218 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C11AD3F27C8567500F5D218 /* Restaurant.swift */; };
+		7C6B291627D14E58002486E0 /* RestaurantDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B291527D14E58002486E0 /* RestaurantDetail.swift */; };
+		7C6B291827D1534E002486E0 /* RestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6B291727D1534E002486E0 /* RestaurantDetailViewController.swift */; };
 		7C9D64F527C8012800645C19 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D64F427C8012800645C19 /* AppDelegate.swift */; };
 		7C9D64F727C8012800645C19 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D64F627C8012800645C19 /* SceneDelegate.swift */; };
 		7C9D64F927C8012800645C19 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9D64F827C8012800645C19 /* ViewController.swift */; };
@@ -43,6 +45,8 @@
 		32E6E9D19F585DA11A2B57BA /* Pods-lecture1_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lecture1_Demo.debug.xcconfig"; path = "Target Support Files/Pods-lecture1_Demo/Pods-lecture1_Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		7C11AD3D27C855D600F5D218 /* RestaurantService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantService.swift; sourceTree = "<group>"; };
 		7C11AD3F27C8567500F5D218 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		7C6B291527D14E58002486E0 /* RestaurantDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetail.swift; sourceTree = "<group>"; };
+		7C6B291727D1534E002486E0 /* RestaurantDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailViewController.swift; sourceTree = "<group>"; };
 		7C9D64F127C8012800645C19 /* lecture1_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lecture1_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C9D64F427C8012800645C19 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C9D64F627C8012800645C19 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,7 +119,9 @@
 				7C9D64F427C8012800645C19 /* AppDelegate.swift */,
 				7C9D64F627C8012800645C19 /* SceneDelegate.swift */,
 				7C9D64F827C8012800645C19 /* ViewController.swift */,
+				7C6B291727D1534E002486E0 /* RestaurantDetailViewController.swift */,
 				7C11AD3D27C855D600F5D218 /* RestaurantService.swift */,
+				7C6B291527D14E58002486E0 /* RestaurantDetail.swift */,
 				7C11AD3F27C8567500F5D218 /* Restaurant.swift */,
 				7C9D652427C804A100645C19 /* RestaurantTableViewCell.swift */,
 				7C9D64FA27C8012800645C19 /* Main.storyboard */,
@@ -149,7 +155,6 @@
 				32E6E9D19F585DA11A2B57BA /* Pods-lecture1_Demo.debug.xcconfig */,
 				CC645F007A4F04ECC68E1526 /* Pods-lecture1_Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -337,6 +342,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C9D652527C804A100645C19 /* RestaurantTableViewCell.swift in Sources */,
+				7C6B291627D14E58002486E0 /* RestaurantDetail.swift in Sources */,
+				7C6B291827D1534E002486E0 /* RestaurantDetailViewController.swift in Sources */,
 				7C9D64F927C8012800645C19 /* ViewController.swift in Sources */,
 				7C11AD4027C8567500F5D218 /* Restaurant.swift in Sources */,
 				7C9D64F527C8012800645C19 /* AppDelegate.swift in Sources */,

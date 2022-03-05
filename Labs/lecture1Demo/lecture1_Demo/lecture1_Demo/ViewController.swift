@@ -47,5 +47,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.configure(with: restaurants[indexPath.row])
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let detailRestaurantViewController = segue.destination as? RestaurantDetailViewController
+        
+        if segue.identifier == "toDetail"
+        {
+            let selectedRow = restuarantTableView.indexPathForSelectedRow
+            let id = restaurants[selectedRow!.row].id
+            detailRestaurantViewController?.configure(with: id)
+        }
+    }
 }
 
