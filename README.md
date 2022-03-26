@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/yUJrBNX.gifv' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![Parsagram Gif](https://i.imgur.com/yUJrBNX.gifv)
 
 # Twitter - Part II
 
