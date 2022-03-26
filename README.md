@@ -23,7 +23,7 @@ The following **bonus** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://giphy.com/embed/ssMpusc2mYowPZ073r' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./Assignments/parstagram_VideoWalkthrough1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 # Twitter - Part II
 
@@ -50,6 +50,7 @@ The following **bonus** features are implemented:
 Here's a walkthrough of implemented user stories:
 
 <img src='./Assignments/twitter_VideoWalkthrough2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 # Twitter - Part I
 
 This is a basic twitter app to read your tweets.
