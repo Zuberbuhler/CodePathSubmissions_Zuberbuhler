@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Icon-60" translatesAutoresizingMaskIntoConstraints="NO" id="DBj-g8-bSD">
+                                <rect key="frame" x="155" y="378" width="104" height="104"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="104" id="f6d-fy-vGv"/>
+                                    <constraint firstAttribute="height" constant="104" id="gC7-YY-aMR"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="instagram_logo" translatesAutoresizingMaskIntoConstraints="NO" id="XUl-2m-35X">
+                                <rect key="frame" x="79.5" y="250" width="255" height="108"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DBj-g8-bSD" firstAttribute="top" secondItem="XUl-2m-35X" secondAttribute="bottom" constant="20" id="29g-yb-iD4"/>
+                            <constraint firstItem="DBj-g8-bSD" firstAttribute="top" secondItem="XUl-2m-35X" secondAttribute="bottom" constant="20" id="8Kr-Iw-3SR"/>
+                            <constraint firstItem="XUl-2m-35X" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="D8x-Zs-A72"/>
+                            <constraint firstItem="DBj-g8-bSD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="KK0-zB-VXa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DBj-g8-bSD" secondAttribute="trailing" constant="155" id="L0A-uf-Kqr"/>
+                            <constraint firstItem="XUl-2m-35X" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="206" id="YRq-aT-Ekw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon-60" width="60" height="60"/>
+        <image name="instagram_logo" width="255" height="108"/>
+    </resources>
+</document>
